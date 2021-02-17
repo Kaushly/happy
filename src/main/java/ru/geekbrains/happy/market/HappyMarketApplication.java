@@ -9,9 +9,8 @@ import java.util.stream.Stream;
 @SpringBootApplication
 public class HappyMarketApplication {
 	// Домашнее задание:
-	// 1. Доработайте корзину
-	// 2. доп: Мысли по поводу того, как заказы должны храниться в БД
-	// (например, как организовать сохранение цен товаров на момент покупки)
+	// 1. Добавить к заказу возможность указания адреса доставки в виде строки++
+	// 2. Сделать регистрацию пользователей через REST API
 
 	public static void main(String[] args) {
 		SpringApplication.run(HappyMarketApplication.class, args);

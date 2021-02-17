@@ -138,7 +138,38 @@
             </tr>
             </tbody>
         </table>
-        <button class="btn btn-success" ng-click="createOrder()">Оформить заказ</button>
+        <td></td>
+        <div>
+            <label>Адрес доставки: </label>
+            <form>
+                <div class="form-group row">
+                    <div class="form-group col-md-3">
+                        <label>Город</label>
+                        <input type="text" ng-model="city" class="form-control"
+                               placeholder="г. Москва" style="margin-bottom: 10px;" required="">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Улица</label>
+                        <input type="text" ng-model="street" class="form-control"
+                               placeholder="ул. Чертановская" style="margin-bottom: 10px;" required="">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Номер дома</label>
+                        <input type="number" ng-model="house" class="form-control"
+                               placeholder="48" style="margin-bottom: 10px;" required="">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Корпус/строение</label>
+                        <input type="number" ng-model="housing" class="form-control"
+                               placeholder="2" style="margin-bottom: 10px;" required="">
+                    </div>
+                </div>
+                <div ng-show = "city && street && house" >
+                    <button class="btn btn-success" ng-click="createOrder()">Оформить заказ</button>
+                </div>
+            </form>
+        </div>
+
         <td></td>
         <button class="btn btn-danger" ng-click="clearCart()">Очистить корзину</button>
 
